@@ -1,0 +1,6 @@
+ntc-training ~/labs/vlan-config (main +) $ mkdir template
+ntc-training ~/labs/vlan-config (main +%) $ cat template/vlans.j2
+{% for vlan in vlans %}
+vlan {{ vlan.id }}
+ name {{ vlan.name }}
+{% endfor %}
